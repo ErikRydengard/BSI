@@ -76,7 +76,7 @@ class MicrobiologyCleaner(BaseCleaner):
         )
 
         # Generate the 'episode_id' by concatenating patient ID and episode number
-        df["episode_id"] = df[patient_id_col_name].astype(str) + df[
+        df["episode_id"] = df[patient_id_col_name].astype(str) + '_' + df[
             "episode_nr"
         ].astype(int).astype(str)
 
