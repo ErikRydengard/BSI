@@ -1,0 +1,10 @@
+{
+  "VardtillfalleAlias": "hosp_id",
+  "AktivitetTermId": "remove",
+  "Aktivitet": "remove",
+  "TermId": "remove",
+  "Diagnostyp": "diagnosis_type",
+  "PatientDiagnos_Kod": "diagnosis_code",
+  "PatientDiagnos_Beskrivning": "remove",
+  "PatientDiagnos_ModifieradDatum": "diagnosis_date"
+}

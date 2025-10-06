@@ -1,0 +1,12 @@
+{
+    "diagnosis_type": {
+        "Bidiagnos": "secondary_diagnosis",
+        "bidiagnos tillägg ICD10": "secondary_diagnosis",
+        "Huvuddiagnos": "main_diagnosis",
+        "huvuddiagnos": "main_diagnosis"
+    },
+    "origin": {
+        "Melior OVA": "",
+        "Melior SVA": ""
+    }
+}

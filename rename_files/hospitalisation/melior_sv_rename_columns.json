@@ -1,0 +1,18 @@
+{
+    "Mikrobiologi_Prov_Alias": "sample_id",
+    "RS_PAT_Alias": "patient_id",
+    "VardtillfalleAlias": "hosp_id",
+    "Vardtillfalle_StartDatum": "hosp_start",
+    "Vardtillfalle_SlutDatum": "hosp_stop",
+    "Vardtillfalle_Vardform": "remove",
+    "Vardtillfalle_VardformText": "hosp_type",
+    "Vardtillfalle_PatientAlderVidInskrivning": "remove",
+    "Vardtillfalle_ArAvslutat": "remove",
+    "Vardtillfalle_Avdelning": "remove",
+    "Organisation_AvdelningNamn": "hosp_site",
+    "Organisation_KlinikNamn": "remove",
+    "Organisation_SjukhusNamn": "remove",
+    "Organisation_VardgivareNamn": "remove",
+    "Organisation_VerksamhetTyp": "remove",
+    "VardtillfalleNummer": "remove"
+}

@@ -1,0 +1,9 @@
+{
+  "Mikrobiologi_Prov_Alias": "remove",
+  "RS_PAT_Alias": "patient_id",
+  "Ankomstdatum": "remove",
+  "Kontaktdatum": "diagnosis_date",
+  "Diagnoskod": "diagnosis_code",
+  "Diagnostyp": "diagnosis_type",
+  "AntalDagarMellanAnkomstdatumOchKontaktdatum": "remove"
+}

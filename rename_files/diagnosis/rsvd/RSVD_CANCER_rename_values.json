@@ -1,0 +1,22 @@
+{
+    "diagnosis_type": {
+        "Diagnos1": "main_diagnosis",
+        "Diagnos10": "secondary_diagnosis",
+        "Diagnos11": "secondary_diagnosis",
+        "Diagnos12": "secondary_diagnosis",
+        "Diagnos13": "secondary_diagnosis",
+        "Diagnos14": "secondary_diagnosis",
+        "Diagnos15": "secondary_diagnosis",
+        "Diagnos2": "secondary_diagnosis",
+        "Diagnos3": "secondary_diagnosis",
+        "Diagnos4": "secondary_diagnosis",
+        "Diagnos5": "secondary_diagnosis",
+        "Diagnos6": "secondary_diagnosis",
+        "Diagnos7": "secondary_diagnosis",
+        "Diagnos8": "secondary_diagnosis",
+        "Diagnos9": "secondary_diagnosis"
+    },
+    "origin": {
+        "RSVD Cancer": ""
+    }
+}
