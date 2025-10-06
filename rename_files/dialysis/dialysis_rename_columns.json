@@ -1,0 +1,10 @@
+{
+    "Mikrobiologi_Prov_Alias": "remove",
+    "RS_PAT_Alias": "patient_id",
+    "Aktivitet": "activity",
+    "Aktivitet_RegistreradDatum": "dialysis_date",
+    "Dialystyp": "dialysis_type",
+    "Plats_och_utforande_av_dialys": "remove",
+    "AntalDagarMellanAnkomstdatumOchDialysDatum": "remove"
+  }
+  
