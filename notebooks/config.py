@@ -2,7 +2,6 @@ class Config:
 
     BASE_DIR = "/Volumes/KINGSTON"
     DATA_PATH = f"{BASE_DIR}/converted_parquet"
-    UTTAG_NEW_PATH = f"{BASE_DIR}/Uttag_v2"
     UTIL_DATA_PATH = f"{BASE_DIR}/util_data"
     RENAME_DIR = "../rename_files/microbiology"
     STORE_PATH = f"{BASE_DIR}/BSI_TTP_Databas/cleaned_data"
@@ -49,20 +48,20 @@ class Config:
     MELIOR_SVA_EPIKRIS_PATH = f"{BASE_DIR}/Uttag_v2/Melior_SlutenVardtillfalle_PatientDiagnos_Epikris_v2.parquet"
 
     MELIOR_OV_PATH = f"{DATA_PATH}/Melior_OppenVardtillfalle.parquet"
-    MELIOR_SV_PATH = f"{UTTAG_NEW_PATH}/Melior_SlutenVardtillfalle_v2.parquet"
+    MELIOR_SV_PATH = f"{DATA_PATH}/Melior_SlutenVardtillfalle_v2.parquet"
 
-    MELIOR_SV_MULTI = f"{UTTAG_NEW_PATH}/Melior_SlutenVardtillfalle_Flerval_v2.parquet"
+    MELIOR_SV_MULTI = f"{DATA_PATH}/Melior_SlutenVardtillfalle_Flerval_v2.parquet"
     MELIOR_OV_MULTI = f"{DATA_PATH}/Melior_OppenVardtillfalle_Flerval.parquet"
 
     MELIOR_OV_ANTIBIOTIC_ORDINATION_PATH =  f"{DATA_PATH}/Melior_OppenVardtillfalle_OrdinationUtdelning_J01.parquet"
-    MELIOR_SV_ANTIBIOTIC_ORDINATION_PATH = f"{UTTAG_NEW_PATH}/Melior_SlutenVardtillfalle_OrdinationUtdelning_J01_v2.parquet"
+    MELIOR_SV_ANTIBIOTIC_ORDINATION_PATH = f"{DATA_PATH}/Melior_SlutenVardtillfalle_OrdinationUtdelning_J01_v2.parquet"
 
     # Medicine
     MEDICINE_PRESCRIPTION = f"{DATA_PATH}/LakemforskrAllaPerioder_365dagarInnanBaseline.parquet"
 
     # laboratory and vitals
-    LABORATORY_PATH = f"{UTTAG_NEW_PATH}/Melior_SlutenVardtillfalle_Labanalyssvar_v2.parquet"
-    VITALS_PATH = f"{UTTAG_NEW_PATH}/Melior_SlutenVardtillfalle_Tal_v2.parquet"
+    LABORATORY_PATH = f"{DATA_PATH}/Melior_SlutenVardtillfalle_Labanalyssvar_v2.parquet"
+    VITALS_PATH = f"{DATA_PATH}/Melior_SlutenVardtillfalle_Tal_v2.parquet"
 
     # Dialysis
     DIALYSIS_PATH = f"{DATA_PATH}/Melior_Enval_Dialys.parquet"
