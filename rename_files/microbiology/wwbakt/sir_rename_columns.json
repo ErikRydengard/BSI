@@ -1,0 +1,8 @@
+{
+    "Mikrobiologi_Prov_Alias": "sample_id",
+    "RS_PAT_Alias": "patient_id",
+    "Prdate": "sample_date",
+    "species": "",
+    "Type of antibiotics": "type_of_antibiotics",
+    "SIR": ""
+}
