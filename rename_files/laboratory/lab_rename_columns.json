@@ -1,0 +1,14 @@
+{
+    "VardtillfalleAlias": "hosp_id",
+    "Term_Namn": "remove",
+    "Analyssvar_ProvtagningDatum": "lab_result_date",
+    "Labanalys_Namn": "lab_name",
+    "Labanalys_Beskrivning": "remove",
+    "Analyssvar_Varde": "lab_result",
+    "Analyssvar_Enhet": "remove",
+    "Analyssvar_Attribut": "remove",
+    "Analyssvar_Referensvarde": "remove",
+    "Analyssvar_ReferensvardeMin": "reference_lower_limit_value",
+    "Analyssvar_ReferensvardeMax": "reference_upper_limit_value",
+    "Analyssvar_SvarArInomReferens": "remove"
+}

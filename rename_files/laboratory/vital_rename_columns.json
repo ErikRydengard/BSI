@@ -1,0 +1,10 @@
+{
+    "VardtillfalleAlias": "hosp_id",
+    "Aktivitet": "remove",
+    "AktivitetTermId": "remove",
+    "Term_Namn": "vital_name",
+    "TermId": "remove",
+    "Tal_Varde": "vital_result",
+    "Term_Enhet": "remove",
+    "Tal_ModifieradDatum": "vital_date"
+}

@@ -1,0 +1,26 @@
+{
+    "vital_name": {
+        "NEWS, andningsfrekvens": "respiratory_rate",
+        "NEWS, blodtryck": "systolic_blood_pressure",
+        "NEWS, blodtryck2": "diastolic_blood_pressure",
+        "NEWS, habituellt låg syremättn": "oxygen_saturation",
+        "NEWS, medvetandegrad": "consciousness",
+        "NEWS, medvetandegrad enl ACVPU": "consciousness_acvpu",
+        "NEWS, pulsfrekvens": "pulse",
+        "NEWS, syremättnad": "oxygen_saturation",
+        "NEWS, systoliskt blodtryck": "systolic_blood_pressure",
+        "NEWS, temperatur": "temperature",
+        "NEWS, totalp hab låg syremättn": "news_score",
+        "NEWS, totalpoäng": "news_score",
+        "ONEWS, andningsfrekvens": "respiratory_rate",
+        "ONEWS, diastoliskt blodtryck": "diastolic_blood_pressure",
+        "oNEWS, diastoliskt blodtryck2": "diastolic_blood_pressure",
+        "ONEWS, medvetandegrad": "consciousness",
+        "ONEWS, pulsfrekvens": "pulse",
+        "ONEWS, syremättnad, procent": "oxygen_saturation_percentage",
+        "ONEWS, systoliskt blodtryck": "systolic_blood_pressure",
+        "oNEWS, systoliskt blodtryck2": "systolic_blood_pressure",
+        "ONEWS, temperatur": "temperature",
+        "ONEWS, totalpoäng": "onews_score"
+    }
+}
