@@ -1,0 +1,9 @@
+{
+    "VardtillfalleAlias": "hosp_id",
+    "Aktivitet": "remove",
+    "AktivitetTermId": "remove",
+    "Term_Namn": "remove",
+    "TermId": "remove",
+    "Flerval_Varde": "ceiling_level",
+    "Flerval_ModifieradDatum": "ceiling_date"
+}
