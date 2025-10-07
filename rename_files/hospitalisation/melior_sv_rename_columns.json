@@ -1,5 +1,5 @@
 {
-    "Mikrobiologi_Prov_Alias": "sample_id",
+    "Mikrobiologi_Prov_Alias": "remove",
     "RS_PAT_Alias": "patient_id",
     "VardtillfalleAlias": "hosp_id",
     "Vardtillfalle_StartDatum": "hosp_start",

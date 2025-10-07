@@ -1,0 +1,12 @@
+{
+    "Mikrobiologi_Prov_Alias": "remove",
+    "RS_PAT_Alias": "patient_id",
+    "Kopdatum": "remove",
+    "AntalDagarMellanAnkomstdatumOchKopdatum": "remove",
+    "Utf datum": "medicine_date",
+    "Prodnamn": "medicine_name",
+    "Styrka": "",
+    "StyrkaEnhet": "",
+    "ATCKod": "atc_code",
+    "ATCKODSTEXT": "remove"
+}
