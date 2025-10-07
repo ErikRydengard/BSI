@@ -1,0 +1,10 @@
+{
+    "Mikrobiologi_Prov_Alias": "remove",
+    "RS_PAT_Alias": "patient_id",
+    "Ankomstdatum": "remove",
+    "opdatum": "surgery_date",
+    "opkod": "surgery_code",
+    "text": "surgery_text",
+    "AntalDagarMellanAnkomstDatumOchOpDatum": "remove"
+  }
+  
