@@ -45,7 +45,7 @@ class Config:
     MELIOR_OVA_EPIKRIS_PATH = (
         f"{DATA_PATH}/Melior_OppenVardtillfalle_PatientDiagnos_Epikris.parquet"
     )
-    MELIOR_SVA_EPIKRIS_PATH = f"{BASE_DIR}/Uttag_v2/Melior_SlutenVardtillfalle_PatientDiagnos_Epikris_v2.parquet"
+    MELIOR_SVA_EPIKRIS_PATH = f"{DATA_PATH}/Melior_SlutenVardtillfalle_PatientDiagnos_Epikris_v2.parquet"
 
     MELIOR_OV_PATH = f"{DATA_PATH}/Melior_OppenVardtillfalle.parquet"
     MELIOR_SV_PATH = f"{DATA_PATH}/Melior_SlutenVardtillfalle_v2.parquet"

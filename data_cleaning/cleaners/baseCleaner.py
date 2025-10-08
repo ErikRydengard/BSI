@@ -241,3 +241,70 @@ class BaseCleaner:
             df_pivoted = df_pivoted.explode(col)
 
         return df_pivoted
+    
+    def assign_block_id(self, df, patient_id, start, stop, time=0):
+        """
+        Function for assigning block ids to overlapping time periods for each patient. This is useful for combining overlapping hospitalisations
+
+        Parameters
+        ----------
+        df : _type_
+            Dataframe containing dates
+        patient_id : _type_
+            column name of the column containing patient ids
+        start : _type_
+            column name of the column containing the start dates
+        stop : _type_
+            column name of the column containing the stop dates
+        time : int, optional
+            Minimum time gap between hospitalisations, by default 0
+
+        Returns
+        -------
+        Original DataFrame with an additional column "block_id" indicating overlapping periods.
+        """
+        df = df.copy()
+        start_date = start + '_date'
+        stop_date = stop + '_date'
+
+        df[start_date] = df[start].dt.normalize()
+        df[stop_date] = df[stop].dt.normalize()
+        df = df.sort_values([patient_id, start_date, stop_date]).reset_index(drop=True)
+
+        prev_max_end = df.groupby(patient_id)[stop_date].cummax().shift()
+        new_block = (df[start_date] > (prev_max_end + pd.Timedelta(days=time))) | prev_max_end.isna()
+        df["block_id"] = new_block.groupby(df[patient_id]).cumsum()
+        return df
+    
+
+    def calculate_hospitalisation_times(self, df, unique_id, baseline, start, stop, time):
+        df = df.copy()
+        
+        for col in [baseline, start, stop]:
+            df[col] = pd.to_datetime(df[col])
+
+        start_date = start + '_date'
+        stop_date = stop + '_date'
+        df[start_date] = df[start]
+        df[stop_date] = df[stop]
+        df['baseline_date'] = df[baseline]
+
+        
+        window_start = df['baseline_date'] + pd.Timedelta(days=1)
+        window_end = df['baseline_date'] + pd.Timedelta(days=time)
+
+        # clip dates
+        df['start_date_trunc'] = df[start_date].clip(lower=window_start)
+        df['stop_date_trunc'] = df[stop_date].clip(upper=window_end)
+
+        # needed so that one day hospitalisations are counted also
+        df['diff'] = (df['stop_date_trunc'] - df['start_date_trunc']).dt.days + 1
+        
+        
+        df = df[df['start_date_trunc'] <= df['stop_date_trunc']]
+        
+        df_hosp_times = df.groupby(unique_id).agg({
+            'diff': 'sum'
+        }).reset_index().rename(columns={'diff': f'hosp_time_{time}'})
+
+        return df_hosp_times
